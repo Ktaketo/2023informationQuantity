@@ -63,12 +63,12 @@ public class TestCase {
 	    myObject = new Frequencer();
 	    myObject.setSpace("Hi Ho Hi Ho".getBytes());
 	    freq = myObject.frequency();
-	    assert freq == -1: "TARGET is not set or TARGET's length is zero" // Targetが初期化されていないときは-1を返す 
+	    assert freq == -1: "TARGET is not set or TARGET's length is zero"; // Targetが初期化されていないときは-1を返す 
 
 	    myObject = new Frequencer();
 	    myObject.setTarget("H".getBytes());
 	    freq = myObject.frequency();
-	    assert freq == 0: "SPACE is not set or Space's length is zero" // Spaceが初期化されていないときは0を返す 
+	    assert freq == 0: "SPACE is not set or Space's length is zero"; // Spaceが初期化されていないときは0を返す 
 
 
 	}
