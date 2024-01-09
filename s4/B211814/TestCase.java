@@ -59,6 +59,7 @@ public class TestCase {
 
 	    /* Week1, Step13
 <<<<<<< HEAD
+<<<<<<< HEAD
 	           myObject = new Frequencer();
 		       myObject.setSpace("ABABAABA".getBytes());
 		           myObject.setTarget("ABA".getBytes());
@@ -83,6 +84,8 @@ public class TestCase {
 				           freq = myObject.frequency();
 					       assert freq == 0: "SPACE is not set or Space's length is zero"; // Spaceが初期化されていないときは0を返す
 =======
+=======
+>>>>>>> 8bfe3fd8e281bc2232676744e55e05498ad9d1f4
 	    myObject = new Frequencer();
 	    myObject.setSpace("ABABAABA".getBytes());
 	    myObject.setTarget("ABA".getBytes());
@@ -106,6 +109,9 @@ public class TestCase {
 	    myObject.setTarget("H".getBytes());
 	    freq = myObject.frequency();
 	    assert freq == 0: "SPACE is not set or Space's length is zero"; // Spaceが初期化されていないときは0を返す
+<<<<<<< HEAD
+>>>>>>> 8bfe3fd8e281bc2232676744e55e05498ad9d1f4
+=======
 >>>>>>> 8bfe3fd8e281bc2232676744e55e05498ad9d1f4
 	    */
 
