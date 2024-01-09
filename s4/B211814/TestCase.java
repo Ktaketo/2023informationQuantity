@@ -58,35 +58,7 @@ public class TestCase {
 	    }
 
 	    /* Week1, Step13
-<<<<<<< HEAD
-<<<<<<< HEAD
-	           myObject = new Frequencer();
-		       myObject.setSpace("ABABAABA".getBytes());
-		           myObject.setTarget("ABA".getBytes());
-			       freq = myObject.frequency();
-			           assert freq == 3: "ABABAABA, ABA: " + freq; // 一部が重複する文字列
-
-				       myObject = new Frequencer();
-				           myObject.setSpace("A".getBytes());
-					       myObject.setTarget("AB".getBytes());
-					           freq = myObject.frequency();
-						   assert freq == 0: "A, AB: " + freq; // Targetの方がSpaceより長い  
-            */
-	    
-	    /* Week1, Step14
-	           myObject = new Frequencer();
-		       myObject.setSpace("Hi Ho Hi Ho".getBytes());
-		           freq = myObject.frequency();
-			       assert freq == -1: "TARGET is not set or TARGET's length is zero"; // Targetが初期化されていないときは-1を返す 
-
-			           myObject = new Frequencer();
-				       myObject.setTarget("H".getBytes());
-				           freq = myObject.frequency();
-					       assert freq == 0: "SPACE is not set or Space's length is zero"; // Spaceが初期化されていないときは0を返す
-=======
-=======
->>>>>>> 8bfe3fd8e281bc2232676744e55e05498ad9d1f4
-	    myObject = new Frequencer();
+            myObject = new Frequencer();
 	    myObject.setSpace("ABABAABA".getBytes());
 	    myObject.setTarget("ABA".getBytes());
 	    freq = myObject.frequency();
@@ -98,7 +70,7 @@ public class TestCase {
 	    freq = myObject.frequency();
 	    assert freq == 0: "A, AB: " + freq; // Targetの方がSpaceより長い  
             */
-		
+	    
 	    /* Week1, Step14
 	    myObject = new Frequencer();
 	    myObject.setSpace("Hi Ho Hi Ho".getBytes());
@@ -109,10 +81,6 @@ public class TestCase {
 	    myObject.setTarget("H".getBytes());
 	    freq = myObject.frequency();
 	    assert freq == 0: "SPACE is not set or Space's length is zero"; // Spaceが初期化されていないときは0を返す
-<<<<<<< HEAD
->>>>>>> 8bfe3fd8e281bc2232676744e55e05498ad9d1f4
-=======
->>>>>>> 8bfe3fd8e281bc2232676744e55e05498ad9d1f4
 	    */
 
 
