@@ -1,6 +1,8 @@
 package s4.B211814; // Please modify to s4.Bnnnnnn, where nnnnnn is your student ID.
 
 import java.lang.*;
+import java.util.Arrays;
+
 import s4.specification.*;
 
 /*
@@ -47,12 +49,12 @@ public class Frequencer implements FrequencerInterface {
   @Override
   public int frequency() {
     // It return -1, when TARGET is not set or TARGET's length is zero
-    if (myTarget.length == 0) {
+    if (myTarget == null || myTarget.length == 0) {
       return -1;
     }
 
     // Otherwise, it return 0, when SPACE is not set or Space's length is zero
-    if (mySpace.length == 0) {
+    if (mySpace == null || mySpace.length == 0) {
       return 0;
     }
 
@@ -87,36 +89,24 @@ public class Frequencer implements FrequencerInterface {
     // ... , target[end-1].
 
     // It return -1, when TARGET is not set or TARGET's length is zero
-    if (myTarget.length == 0) {
+    if (myTarget == null || myTarget.length == 0) {
       return -1;
     }
 
     // Otherwise, it return 0, when SPACE is not set or Space's length is zero
-    if (mySpace.length == 0) {
+    if (mySpace == null || mySpace.length == 0) {
       return 0;
     }
 
-    int targetLength = myTarget.length;
-    int spaceLength = mySpace.length;
-    int count = 0;
-    if (debugMode) {
-      showVariables();
+    if (start < 0 || end > myTarget.length || start > end) {// For incorrect values of start or end, the behavior is
+                                                            // undefined.
+      return -1;
     }
-    for (int j = 0; j < spaceLength - targetLength + 1; start++) { // Is it OK?
-      boolean abort = false;
-      for (int i = start; i < end; i++) { // start <= i <= end - 1
-        if (myTarget[i] != mySpace[j + i - start]) {
-          abort = true;
-          break;
-        }
-      }
-      if (abort == false) {
-        count++;
-      }
-    }
-    if (debugMode) {
-      System.out.printf("%10d\n", count);
-    }
+
+    byte[] subByte = Arrays.copyOfRange(myTarget, start, end);
+    setTarget(subByte); // Set the subByte as the new target
+    int count = frequency();
+
     return count;
   }
 
