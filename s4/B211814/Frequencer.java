@@ -83,7 +83,8 @@ public class Frequencer implements FrequencerInterface {
   // I know that here is a potential problem in the declaration.
   @Override
   public int subByteFrequency(int start, int end) {
-    // get the frequency of subByte of taget, i.e. target[start], taget[start+1], ... , target[end-1].
+    // get the frequency of subByte of taget, i.e. target[start], taget[start+1],
+    // ... , target[end-1].
 
     // It return -1, when TARGET is not set or TARGET's length is zero
     if (myTarget.length == 0) {
